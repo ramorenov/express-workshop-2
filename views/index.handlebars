@@ -45,6 +45,21 @@
             <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
         </div>
         <hr>
+
+        {{#each posts}}
+        <div class="post-preview">
+            <a href="post.html">
+                <h2 class="post-title">
+                    {{this.title}}
+                </h2>
+                <h3 class="post-subtitle">
+                    {{this.summary}}
+                </h3>
+            </a>
+        </div>
+        {{/each}}
+
+
         <!-- Pager -->
         <ul class="pager">
             <li class="next">
